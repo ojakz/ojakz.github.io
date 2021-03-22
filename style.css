@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
+
+
+  .garis{
+    border-bottom: 2px solid cornsilk;
+   
+  }
+
+  .navbar{
+    z-index: 9999999999;
+  }
+  .navbar-brand{
+    font-family: 'Noto Sans JP', sans-serif; color: whitesmoke !important; 
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .navbar-brand:hover{
+    font-family: 'Noto Sans JP', sans-serif; color: rgb(255, 255, 255) !important; 
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.2);
+    
+  }
+
+  .nav-link{
+    font-family: 'Noto Sans JP', sans-serif; color: whitesmoke !important;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out !important;
+  }
+
+  
+  .nav-link:hover{
+    font-family: 'Noto Sans JP', sans-serif; color: #000 !important; 
+    content: '';
+    background: rgba(255, 255, 255, 0.7) !important;
+    
+    transition: all 0.2s ease-in-out !important;
+  }
+
+  .borderhome.active {
+    font-family: 'Noto Sans JP', sans-serif; color: #000 !important; 
+    content: '';
+    background: rgba(255, 255, 255, 0.7) !important;
+    transition: all 0.2s ease-in-out !important;
+  }
+
+  .borderabout.active {
+    font-family: 'Noto Sans JP', sans-serif; color: #000 !important; 
+    content: '';
+    background: rgba(255, 255, 255, 0.7) !important;
+    transition: all 0.2s ease-in-out !important;
+  }
+    
+
+  .borderservices.active {
+    font-family: 'Noto Sans JP', sans-serif; color: #000 !important; 
+    content: '';
+    background: rgba(255, 255, 255, 0.7) !important;
+    transition: all 0.2s ease-in-out !important;
+  }
+    
+
+  .borderprices.active {
+    font-family: 'Noto Sans JP', sans-serif; color: #000 !important; 
+    content: '';
+    background: rgba(255, 255, 255, 0.7) !important;
+    transition: all 0.2s ease-in-out !important;
+  }
+    
+  .bordercontact.active {
+    font-family: 'Noto Sans JP', sans-serif; color: #000 !important; 
+    content: '';
+    background: rgba(255, 255, 255, 0.7) !important;
+    transition: all 0.2s ease-in-out !important;
+  }
+    
+    
+  
+  #aboutus, #harga{
+    color: rgb(42, 42, 46);
+  }
+
+  .text-utama{
+    font-family: 'Noto Sans JP', sans-serif; color: whitesmoke !important; 
+    
+  }
+
+  .text-utama{
+    font-family: 'Noto Sans JP', sans-serif; color: black !important; 
+    
+  }
+
+  
+  
+
+
+.form-control{
+    
+   border-color:rgb(172, 172, 172); 
+   
+   
+  }
+
+
+.form-control:focus{ 
+ 
+  border-color:#006d75;
+  
+  }
+
+
+.main-btn{ 
+  background:#ffffff; 
+  color:rgb(2, 124, 133);
+  }
+
+.main-btn:hover{ 
+  background:rgb(91, 132, 134);
+  color:#fff;
+  }
+
+
+    
+  
+
+.cotajg{
+ 
+  margin-top: -25%;
+ 
+  z-index: 99999;
+}
+
+.knp-pilih-kita{
+  margin-top: -16% !important;
+}
+
+.icon-aing{
+  font-size: 3rem; color: ghostwhite;
+  transition: all 0.2s ease-in-out !important;
+}
+
+.icon-aing:hover{
+  font-size: 3rem; color: rgb(168, 168, 228);
+  transition: all 0.2s ease-in-out !important;
+  
+}
+
+.box-sign {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 60px;
+  padding: 36px 15px 0 120px;
+  position: relative;
+}
+
+.box-sign img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.box-sign b {
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.box-sign span {
+  display: block;
+  line-height: 15px;
+}
+    
+.shadowtext {
+  text-shadow:  0px 3px 3px rgba(0, 0, 0, 0.267);
+}
+
+.card:hover{
+  box-shadow: 3px 15px 10px 5px rgba(0, 0, 0, 0.103) !important;
+  transform:scale(1);
+  top: -7px;
+}
+
+.card{
+  position: relative;
+  top: 0;
+  transition: all ease 0.4s;
+}
+
+
+
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.text-pilihanque,
+.btn,
+.card-title,
+.card-subtitle{
+
+font-family: 'Poppins', sans-serif !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+  
+@media (min-width: 300px) {
+  .hed-text { font-size: 30px; }
+  .carousel-caption { margin-bottom: 5%;}
+  .logo-hedset{
+    font-size: 100px; color: rgb(250, 250, 250);
+    text-align: center;}
+  
+  #carouselOjak .carousel-inner .carousel-item .carousel-caption p {
+    font-size: 0px;
+  }
+    
+  }
+  .logo-footer{
+    width: 150px;
+  }
+
+@media (min-width: 700px) {
+  .hed-text { font-size: 60px; }
+  .carousel-caption { margin-bottom: 10%;}
+  .card-deck {width: fit-content !important;}
+}
+.icon-aing{
+  font-size: 1.5rem; color: ghostwhite;
+  transition: all 0.2s ease-in-out !important;
+}
+
+.icon-aing:hover{
+  font-size: 1.5rem; color: rgb(168, 168, 228);
+  transition: all 0.2s ease-in-out !important;
+  
+}
+.text-footer{
+  font-size: 16px !important;
+}
+
+.garis{
+  width: 200px;
+}
+
+@media (min-width: 1366px) {
+  .hed-text { font-size: 90px; }
+  .carousel-caption { margin-bottom: 18%;}
+  .logo-hedset{
+    font-size: 500px; color: rgb(250, 250, 250);
+    margin-left: -2%;
+  }
+  .icon-aing{
+    font-size: 3rem; color: ghostwhite;
+    transition: all 0.2s ease-in-out !important;
+  }
+  
+  #carouselOjak .carousel-inner .carousel-item .carousel-caption p {
+    font-size: large;
+  }
+  .icon-aing:hover{
+    font-size: 3rem; color: rgb(168, 168, 228);
+    transition: all 0.2s ease-in-out !important;
+    
+  }
+  .text-footer{
+    font-size: 16px !important;
+  }
+  
+  .garis{
+    width: 320px;
+  }
+  .logo-footer{
+    width: 250px;
+  }
+}
+@media (min-width: 1920px) {
+  .hed-text { font-size: 120px; }
+  .logo-hedset{
+    font-size: 500px; color: rgb(250, 250, 250);
+  }
+}
