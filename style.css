@@ -77,7 +77,7 @@
     
     
   
-  #aboutus, #harga{
+  #aboutus, #harga, #services{
     color: rgb(42, 42, 46);
   }
 
@@ -91,6 +91,10 @@
     
   }
 
+  .box{
+    background-color: white;
+    
+  }
   
   
 
@@ -185,6 +189,18 @@
   transition: all ease 0.4s;
 }
 
+  
+
+#tech .card{
+  font-family: 'Poppins', sans-serif;
+  font-size: medium;
+  font-weight: 500;
+}
+#tech .card:hover{
+  background-color: blue;
+  color: white;
+}
+
 
 
 .display-1,
@@ -203,7 +219,6 @@ html {
   scroll-behavior: smooth;
 }
 
-  
 @media (min-width: 300px) {
   .hed-text { font-size: 30px; }
   .carousel-caption { margin-bottom: 5%;}
@@ -214,12 +229,20 @@ html {
   #carouselOjak .carousel-inner .carousel-item .carousel-caption p {
     font-size: 0px;
   }
-    
-  }
   .logo-footer{
-    width: 150px;
+    width: 100px;
+  
+}
+  #tech .card{
+    width: 200px;
+  
   }
 
+.copy-text{
+  font-size: xx-small;
+}
+}
+  
 @media (min-width: 700px) {
   .hed-text { font-size: 60px; }
   .carousel-caption { margin-bottom: 10%;}
@@ -242,6 +265,7 @@ html {
 .garis{
   width: 200px;
 }
+
 
 @media (min-width: 1366px) {
   .hed-text { font-size: 90px; }
