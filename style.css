@@ -6,13 +6,14 @@
    
   }
 
+ 
   .navbar{
     z-index: 9999999999;
   }
   .navbar-brand{
     font-family: 'Noto Sans JP', sans-serif; color: whitesmoke !important; 
     font-size: 16px;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.4s ease-in-out;
   }
 
   .navbar-brand:hover{
@@ -97,7 +98,66 @@
   }
   
   
+  #testimonial    .container{
+    margin-top: 4%;
+}
 
+#testimonial .img-text{
+    width: 100%;
+    height: 300px;
+    display: block;
+    text-align: center;
+    padding: 40% 5%;
+    background: #262626;
+    color: #fff;
+    border-radius: 15px;
+}
+
+#testimonial .img-text h2{
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#testimonial .img-text p{
+    font-size: 14px;
+}
+
+#testimonial .single-box{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#testimonial .img-area{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 5px solid #fff;
+    overflow: hidden;
+    top: 15px;
+    left: 125px;
+    border-radius: 50%;
+}
+
+#testimonial .img-area img{
+    width: 100%;
+}
+
+#testimonial .carousel-indicators{
+    left: 0;
+    top: auto;
+    bottom: -20px;
+}
+
+#testimonial .carousel-indicators li{
+    background: #000;
+    border-radius: 50%;
+    width: 20px;
+    height: 0px;
+}
+#testimonial .carousel-indicators .active{
+    background: rgb(71, 71, 71);
+}
 
 .form-control{
     
@@ -128,16 +188,6 @@
     
   
 
-.cotajg{
- 
-  margin-top: -25%;
- 
-  z-index: 99999;
-}
-
-.knp-pilih-kita{
-  margin-top: -16% !important;
-}
 
 .icon-aing{
   font-size: 3rem; color: ghostwhite;
@@ -177,16 +227,27 @@
   text-shadow:  0px 3px 3px rgba(0, 0, 0, 0.267);
 }
 .card:hover{
-  box-shadow: 3px 15px 10px 5px rgba(0, 0, 0, 0.103) !important;
-  transform:scale(1);
-  top: -7px;
+box-shadow: 3px 15px 10px 5px rgba(0, 0, 0, 0.103) !important;
+transform:scale(1);
+top: -7px;
+}
+#services .card:hover > .card-img-top {
+ 
+  filter: brightness(70%);
 }
 
-.card{
+.card, .card-img-top{
   position: relative;
   top: 0;
-  transition: all ease 0.4s;
+  
+  filter: brightness(100%);
+    transition: all ease-in-out 0.4s;
 }
+.card-img-top{
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.103) !important;
+}
+
+
 
   
 
@@ -220,7 +281,7 @@ html {
 
 @media (min-width: 300px) {
   .hed-text { font-size: 30px; }
-  .carousel-caption { margin-bottom: 5%;}
+  .carousel-caption { margin-bottom: 4%;}
   .logo-hedset{
     font-size: 100px; color: rgb(250, 250, 250);
     text-align: center;}
@@ -237,11 +298,26 @@ html {
   
   }
 
+  .tech-text{
+    font-size: 32px;
+  }
+
 .copy-text{
   font-size: xx-small;
 }
+.cotajg{
+ 
+  margin-top: 0% !important;
+ 
+  z-index: 99999;
 }
-  
+}
+.knp-pilih-kita{
+  margin-top: -10% !important;
+}
+.logo-navbar{
+  width: 50px;
+}
 @media (min-width: 700px) {
   .hed-text { font-size: 60px; }
   .carousel-caption { margin-bottom: 10%;}
@@ -264,6 +340,28 @@ html {
 .garis{
   width: 200px;
 }
+
+#tech .card{
+  width: 150px;
+
+}
+
+
+.cotajg{
+ 
+  margin-top: -25% !important;
+
+  z-index: 99999;
+}
+
+.knp-pilih-kita{
+  margin-top: -16% !important;
+}
+.logo-navbar{
+  width: 120px;
+}
+
+
 
 
 @media (min-width: 1366px) {
@@ -295,6 +393,9 @@ html {
   }
   .logo-footer{
     width: 250px;
+  }
+  .tech-text{
+    font-size: 50px;
   }
 }
 @media (min-width: 1920px) {

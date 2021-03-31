@@ -18,6 +18,18 @@
     <link rel="stylesheet" href="css/all.css">
 
     <style type="text/css">
+     @media(min-width: 300px){
+        .nav-bg {
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      z-index: 10000;
+      transition: all 0.2s ease-in-out;
+      background-color:  rgba(39, 64, 71, 0.9) !important; 
+      }}
+    @media(min-width: 700px) {
     .nav-bg {
       top: 0;
       left: 0;
@@ -26,30 +38,36 @@
       padding-bottom: 10px;
       z-index: 10000;
       transition: all 0.2s ease-in-out;
-      background-color: transparent; 
+      background-color: transparent !important; 
 
             }
 
     .nav-bg.active {
        background-color: rgba(39, 64, 71, 0.9) !important; 
       }
+      }
       
+     
       </style>
     
 </head>
 <body>
   <nav class="navbar navbar-expand-lg nav-bg fixed-top animate__animated animate__fadeIn ">
-    <a class="navbar-brand" href="#"><img src="img/logo.png" width="120px"></a>
+    <a class="navbar-brand" href="#"><img src="img/logo.png" class="logo-navbar"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"><i class="bi bi-three-dots-vertical" style="font-size: 32px; color: ghostwhite;"></i></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ml-auto mr-3 ">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
         <a class="nav-item nav-link borderhome mr-2" href="#Home">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link borderabout mr-2" href="#aboutus">About Us</a>
-        <a class="nav-item nav-link borderservices mr-2" href="#services">Services</a>
-        <a class="nav-item nav-link borderprices mr-2" href="#harga">Packages</a>
-        <a class="nav-item nav-link bordercontact mr-2" href="#kontak">Contact Us</a>
+      </li>
+       <li class="nav-item"> <a class="nav-link borderabout mr-2" href="#aboutus">About Us</a></li>
+       <li class="nav-item">  <a class="nav-link borderservices mr-2" href="#services">Services</a> </li>
+        <li class="nav-item">  <a class="nav-link borderprices mr-2" href="#harga">Packages</a> </li>
+          <li class="nav-item">  <a class="nav-link bordercontact mr-2" href="#kontak">Contact Us</a> </li>
+      </ul>
       </div>
     </div>
   </nav>
@@ -140,13 +158,18 @@
 
 </div>
 <section class="py-5"  id="aboutus" >
-  <div class="container pt-5 mt-5">
+  <div class="container text-center">
+  <center>
+  <h3 class="display-4 text-center mt-5" style="font-size: 50px; border-bottom: 2px solid  teal; width: 20%; padding-bottom: 3px;">About Us</h3>
+</center>  
+</div> 
+
+  <div class="container mt-5">
       <div class="row">
           <div class="col-12 col-lg-6 my-2 text-center">
            <img src="img/about-us.jpg" class="d-block img-fluid rounded" style="background-color:rgba(0, 0, 0, 0.2); filter: contrast(113%)brightness(90%);">
           </div>
           <div class="col-12 col-lg-6 my-2">
-              <h3 class="display-4" style="font-size: 20px; border-bottom: 2px solid  teal; width: 20%; padding-bottom: 3px;">About Us</h3>
               
               <h4 class="text-pilihanque">Who are we?</h4>
               
@@ -256,53 +279,53 @@
   </h1>
   <hr width="20%">
   <p class="lead text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, corporis?</p>
- 
+  <div class="container">
     <div class="row text-center mx-auto">
    
       <div class="col-lg-2 col-sm-6 my-4 mid">
         <div class="card mx-auto" style="height: 120%;">
-          <i class="fab fa-js-square my-2 icon-tech" style="font-size: 150px;"></i>
+          <i class="fab fa-js-square my-2 icon-tech" style="font-size: 100px;"></i>
         <p class="mt-auto">JavaScript</p>
       </div>
       </div>
 
       <div class="col-lg-2 col-sm-6 my-4 mid">
         <div class="card mx-auto" style="height: 120%;">
-          <i class="fab fa-bootstrap my-2 icon-tech" style="font-size: 150px;"></i>
+          <i class="fab fa-bootstrap my-2 icon-tech" style="font-size: 100px;"></i>
         <p class="mt-auto">Bootstrap</p>
       </div>
       </div>
  
       <div class="col-lg-2 col-sm-6 my-4 mid">
         <div class="card mx-auto" style="height: 120%;">
-          <i class="fab fa-linux my-2 icon-tech" style="font-size: 150px;"></i>
+          <i class="fab fa-linux my-2 icon-tech" style="font-size: 100px;"></i>
         <p class="mt-auto">Linux</p>
       </div>
       </div>
  
       <div class="col-lg-2 col-sm-6 my-4 mid">
         <div class="card mx-auto" style="height: 120%;">
-          <i class="fab fa-css3-alt my-2 icon-tech" style="font-size: 150px;"></i>
+          <i class="fab fa-css3-alt my-2 icon-tech" style="font-size: 100px;"></i>
         <p class="mt-auto">CSS</p>
       </div>
       </div>
  
       <div class="col-lg-2 col-sm-6 my-4 mid">
         <div class="card mx-auto" style="height: 120%;">
-          <i class="fab fa-python my-2 icon-tech" style="font-size: 150px;"></i>
+          <i class="fab fa-python my-2 icon-tech" style="font-size: 100px;"></i>
         <p class="mt-auto">Python</p>
       </div>
       </div>
  
       <div class="col-lg-2 col-sm-6 my-4 mid">
         <div class="card mx-auto" style="height: 120%;">
-          <i class="fab fa-php my-2 icon-tech" style="font-size: 150px;"></i>
+          <i class="fab fa-php my-2 icon-tech" style="font-size: 100px;"></i>
           <p class="mt-auto">PHP</p>
       </div>
       </div>
  
  
-    
+    </div>
     
     </div>
   
@@ -310,7 +333,92 @@
 
 </section>
 
+<section id="testimonial">
+  <center>
+  <h3 class="display-4 text-center mt-5" style="font-size: 50px; border-bottom: 2px solid  teal; width: 50%; padding-bottom: 3px;">Our Clients Testimonial</h3>
+</center>
+  <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="single-box">
+                                    <div class="img-area"><img src="img/foto.png" alt=""></div>
+                                    <div class="img-text">
+                                        <h2>Person One</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda odio rerum eos sunt? Corrupti, ex?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single-box">
+                                    <div class="img-area"><img src="img/foto.png" alt=""></div>
+                                    <div class="img-text">
+                                        <h2>Person Two</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda odio rerum eos sunt? Corrupti, ex?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single-box">
+                                    <div class="img-area"><img src="img/foto.png" alt=""></div>
+                                    <div class="img-text">
+                                        <h2>Person Three</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda odio rerum eos sunt? Corrupti, ex?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="single-box">
+                                    <div class="img-area"><img src="img/foto.png" alt=""></div>
+                                    <div class="img-text">
+                                        <h2>Person Four</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda odio rerum eos sunt? Corrupti, ex?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single-box">
+                                    <div class="img-area"><img src="img/foto.png" alt=""></div>
+                                    <div class="img-text">
+                                        <h2>Person Five</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda odio rerum eos sunt? Corrupti, ex?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single-box">
+                                    <div class="img-area"><img src="img/foto.png" alt=""></div>
+                                    <div class="img-text">
+                                        <h2>Person Six</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda odio rerum eos sunt? Corrupti, ex?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+
+</section>
 
 <section id="harga" class="text-center py-5">
   <h3 class="display-4 pt-4" style="font-size: 36px;">Our Packages</h3>
@@ -533,7 +641,7 @@
 
 <script type="text/javascript">
   $(window).on("scroll", function(){
-    if($(window).scrollTop() > 2300){
+    if($(window).scrollTop() > 3000){
       $(".borderprices").addClass("active");
       $(".borderservices").removeClass("active");
     } else {
@@ -544,7 +652,7 @@
  
 <script type="text/javascript">
   $(window).on("scroll", function(){
-    if($(window).scrollTop() > 3000){
+    if($(window).scrollTop() > 4000){
       $(".bordercontact").addClass("active");
       $(".borderprices").removeClass("active");
     } else {
@@ -553,26 +661,7 @@
   });
 </script>
  
-<script type="text/javascript">
-  $(document).ready(function(){
-    $("a").on('click', function(event) {
 
-      if (this.hash !== "") {
-        event.preventDefault();
-  
-        
-        var hash = this.hash;
-
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 100, function(){
-     
-          window.location.hash = hash;
-        });
-      } 
-    });
-  });
-  </script>
 <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
