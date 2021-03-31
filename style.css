@@ -108,7 +108,7 @@
     display: block;
     text-align: center;
     padding: 40% 5%;
-    background: #262626;
+    background:  rgba(39, 64, 71, 0.9);
     color: #fff;
     border-radius: 15px;
 }
