@@ -24,11 +24,7 @@
     
   }
 
-  .nav-link{
-    font-family: 'Noto Sans JP', sans-serif; color: whitesmoke !important;
-    font-size: 16px;
-    transition: all 0.2s ease-in-out !important;
-  }
+  
 
   
   .nav-link:hover{
@@ -39,44 +35,14 @@
     transition: all 0.2s ease-in-out !important;
   }
 
-  .borderhome.active {
+  .nav-link.active{
     font-family: 'Noto Sans JP', sans-serif; color: #000 !important; 
     content: '';
     background: rgba(255, 255, 255, 0.7) !important;
+    
     transition: all 0.2s ease-in-out !important;
   }
-
-  .borderabout.active {
-    font-family: 'Noto Sans JP', sans-serif; color: #000 !important; 
-    content: '';
-    background: rgba(255, 255, 255, 0.7) !important;
-    transition: all 0.2s ease-in-out !important;
-  }
-    
-
-  .borderservices.active {
-    font-family: 'Noto Sans JP', sans-serif; color: #000 !important; 
-    content: '';
-    background: rgba(255, 255, 255, 0.7) !important;
-    transition: all 0.2s ease-in-out !important;
-  }
-    
-
-  .borderprices.active {
-    font-family: 'Noto Sans JP', sans-serif; color: #000 !important; 
-    content: '';
-    background: rgba(255, 255, 255, 0.7) !important;
-    transition: all 0.2s ease-in-out !important;
-  }
-    
-  .bordercontact.active {
-    font-family: 'Noto Sans JP', sans-serif; color: #000 !important; 
-    content: '';
-    background: rgba(255, 255, 255, 0.7) !important;
-    transition: all 0.2s ease-in-out !important;
-  }
-    
-    
+  
   
   #aboutus, #harga, #services{
     color: rgb(42, 42, 46);
@@ -280,6 +246,9 @@ html {
 }
 
 @media (min-width: 300px) {
+  .judultestimoni{
+    font-size: 40px; border-bottom: 2px solid  teal; width: 80%; padding-bottom: 3px;
+  }
   .hed-text { font-size: 30px; }
   .carousel-caption { margin-bottom: 4%;}
   .logo-hedset{
@@ -318,7 +287,24 @@ html {
 .logo-navbar{
   width: 50px;
 }
+.nav-link{
+  font-family: 'Noto Sans JP', sans-serif; color: whitesmoke !important;
+  font-size: 16px;
+  transition: all 0.2s ease-in-out !important;
+  border-radius: 1% !important;
+ 
+}
 @media (min-width: 700px) {
+  .nav-link{
+    font-family: 'Noto Sans JP', sans-serif; color: whitesmoke !important;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out !important;
+    border-radius: 10% !important;
+    
+  }
+  .judultestimoni{
+    font-size: 50px; border-bottom: 2px solid  teal; width: 50%; padding-bottom: 3px;
+  }
   .hed-text { font-size: 60px; }
   .carousel-caption { margin-bottom: 10%;}
   .card-deck {width: fit-content !important;}

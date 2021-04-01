@@ -51,23 +51,19 @@
       </style>
     
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
   <nav class="navbar navbar-expand-lg nav-bg fixed-top animate__animated animate__fadeIn ">
-    <a class="navbar-brand" href="#"><img src="img/logo.png" class="logo-navbar"></a>
+    <a class="navbar-brand" href="#"><img src="img/logo.png" width="120px"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"><i class="bi bi-three-dots-vertical" style="font-size: 32px; color: ghostwhite;"></i></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ml-auto mr-3 ">
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-        <a class="nav-item nav-link borderhome mr-2" href="#Home">Home <span class="sr-only">(current)</span></a>
-      </li>
-       <li class="nav-item"> <a class="nav-link borderabout mr-2" href="#aboutus">About Us</a></li>
-       <li class="nav-item">  <a class="nav-link borderservices mr-2" href="#services">Services</a> </li>
-        <li class="nav-item">  <a class="nav-link borderprices mr-2" href="#harga">Packages</a> </li>
-          <li class="nav-item">  <a class="nav-link bordercontact mr-2" href="#kontak">Contact Us</a> </li>
-      </ul>
+        <a class="nav-item nav-link mx-2" href="#Home">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link mx-2" href="#aboutus">About Us</a>
+        <a class="nav-item nav-link mx-2" href="#services">Services</a>
+        <a class="nav-item nav-link mx-2" href="#harga">Prices</a>
+        <a class="nav-item nav-link mx-2" href="#kontak">Contact Us</a>
       </div>
     </div>
   </nav>
@@ -110,14 +106,16 @@
     
 </header>
 
-<div class="container my-5 knp-pilih-kita">
+<div id="whychoose" class="container my-5 knp-pilih-kita">
   <h1 class="display-4 text-center py-2 my-5" style="font-size:xx-large">Why Choose Us?</h1>
   
-  <div class="card-deck my-5">
+  <div  class="card-deck  my-5">
     <div class="col-sm-3">
       <div class="card shadow">
         <div class="card-body">
-          <img class="img-fluid pb-5" src="img/software-icon.png" width="40%" alt="">
+          <center>
+          <img class="img-fluid pb-3" src="img/software-icon.png" width="40%" alt="">  </center>
+      
           <h5 class="card-title font-weight-bold">Smart Softwares</h5>
           <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
      
@@ -127,7 +125,7 @@
     <div class="col-sm-3">
       <div class="card shadow">
         <div class="card-body">
-          <img class="img-fluid pb-5" src="img/sec-icon.png" width="40%" alt="">
+          <center><img class="img-fluid pb-3" src="img/sec-icon.png" width="40%" alt=""></center>
           <h5 class="card-title font-weight-bold">Trusted Security</h5>
           <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
         </div>
@@ -136,7 +134,8 @@
     <div class="col-sm-3">
       <div class="card shadow">
         <div class="card-body">
-          <img class="img-fluid pb-5" src="img/awards-icon.png" width="40%" alt="">
+          <center><img class="img-fluid pb-3" src="img/awards-icon.png" width="40%" alt=""></center>
+         
           <h5 class="card-title font-weight-bold">Awards Winners</h5>
           <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
         </div>
@@ -145,7 +144,8 @@
     <div class="col-sm-3">
       <div class="card shadow">
         <div class="card-body">
-          <img class="img-fluid pb-5" src="img/exp-icon.png" width="40%" alt="">
+          <center><img class="img-fluid pb-3" src="img/exp-icon.png" width="40%" alt=""></center>
+          
           <h5 class="card-title font-weight-bold">Great Experience</h5>
           <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
         </div>
@@ -160,7 +160,7 @@
 <section class="py-5"  id="aboutus" >
   <div class="container text-center">
   <center>
-  <h3 class="display-4 text-center mt-5" style="font-size: 50px; border-bottom: 2px solid  teal; width: 20%; padding-bottom: 3px;">About Us</h3>
+  <h3 class="display-4 text-center mt-5 judultestimoni" >About Us</h3>
 </center>  
 </div> 
 
@@ -332,10 +332,34 @@
 
 
 </section>
+<section>
+<div class="container-fluid py-5 bg-dark ">
+<div id="counter">
+  <div class="row text-center text-white">
+
+  <div class="col-md-4">
+  <div class="counter-value display-4" data-count="75"></div>
+  <p>Projects</p>
+  
+</div>
+<div class="col-md-4">
+  <div class="counter-value display-4" data-count="317"></div>
+  <p>Skilled Experts</p>
+</div>
+  <div class="col-md-4">
+  <div class="counter-value display-4" data-count="846"></div>
+  <p>Clients</p>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+
 
 <section id="testimonial">
   <center>
-  <h3 class="display-4 text-center mt-5" style="font-size: 50px; border-bottom: 2px solid  teal; width: 50%; padding-bottom: 3px;">Our Clients Testimonial</h3>
+  <h3 class="display-4 text-center my-5 judultestimoni">Our Clients Testimonial</h3>
 </center>
   <div class="container">
     <div class="row">
@@ -575,93 +599,80 @@
   }
   function services() {
      var element = document.getElementById("services");
-     element.classList.add('animate__animated', 'animate__fadeInLeft');
+     element.classList.add('animate__animated', 'animate__fadeInUp');
   }
- 
-</script>
-<script type="text/javascript">
+  function whychoose() {
+     var element = document.getElementById("whychoose");
+     element.classList.add('animate__animated', 'animate__fadeInUp');
+  }
+  
   $(window).on("scroll", function(){
-    if($(window).scrollTop() > 0){
-      $(".borderhome").addClass("active");
+    if($(window).scrollTop() > 120){
+      whychoose();
       $
     } else {
-      $(".borderhome").removeClass("active");
+      ;
     }
   });
-</script>
 
-<script type="text/javascript">
+
   $(window).on("scroll", function(){
-    if($(window).scrollTop() > 370){
+    if($(window).scrollTop() > 500){
       aboutus();
       $
     } else {
       ;
     }
   });
-</script>
 
-<script type="text/javascript">
   $(window).on("scroll", function(){
-    if($(window).scrollTop() > 800){
+    if($(window).scrollTop() > 1000){
       services();
       $
     } else {
       ;
     }
   });
+
+
+  var a = 0;
+
+
+$(window).scroll(function() {
+
+  var oTop = $('#counter').offset().top - window.innerHeight;
+  if (a == 0 && $(window).scrollTop() > oTop) {
+    $('.counter-value').each(function() {
+      var $this = $(this),
+        countTo = $this.attr('data-count');
+      $({
+        countNum: $this.text()
+      }).animate({
+          countNum: countTo
+        },
+
+        {
+
+          duration: 2000,
+          easing: 'swing',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+            //alert('finished');
+          }
+
+        });
+    });
+    a = 1;
+  }
+
+});
+
 </script>
 
-
-
-<script type="text/javascript">
-  $(window).on("scroll", function(){
-    if($(window).scrollTop() > 600){
-      $(".borderabout").addClass("active");
-      
-      $(".borderhome").removeClass("active");
-    } else {
-      $(".borderabout").removeClass("active");
-      $(".borderhome").addClass("active");
-    }
-  });
 </script>
-
-<script type="text/javascript">
-  $(window).on("scroll", function(){
-    if($(window).scrollTop() > 1200){
-      $(".borderservices").addClass("active");
-      $(".borderabout").removeClass("active");
-    } else {
-      $(".borderservices").removeClass("active");
-    }
-  });
-</script>
-
-
-<script type="text/javascript">
-  $(window).on("scroll", function(){
-    if($(window).scrollTop() > 3000){
-      $(".borderprices").addClass("active");
-      $(".borderservices").removeClass("active");
-    } else {
-      $(".borderprices").removeClass("active");
-    }
-  });
-</script>
- 
-<script type="text/javascript">
-  $(window).on("scroll", function(){
-    if($(window).scrollTop() > 4000){
-      $(".bordercontact").addClass("active");
-      $(".borderprices").removeClass("active");
-    } else {
-      $(".bordercontact").removeClass("active");
-    }
-  });
-</script>
- 
-
 <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
